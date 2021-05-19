@@ -1,3 +1,70 @@
-img{
+//Fontes
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@300;700&display=swap');
+
+#header{
+  background: linear-gradient(to right, rgba(248, 109, 112, 0.4), rgba(194, 163, 245, 0.4), rgba(163, 213, 245, 0.4));
+  width: 100%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.cabeçalho_header_desk{
   width: 100%;
+  max-width: 1100px;
+  padding: 5px;
+  display: flex;
+}
+
+.cabeçalho_header_mobile{
+  width: 100%;
+  padding: 5px;
+  display: none;
+}
+
+.img_header{
+  width: 9%;
+  min-width: 50px;
+  margin: 0 15px;
+}
+
+.espaço{
+  width: 60%;
+}
+
+.btn_header{
+  font-family: 'Montserrat';
+  font-size: min(12px, 2vh);
+  color: black;
+}
+
+.btn_cadastro{
+  --border-color: #A26DF8;
+  --border-radius: 0;
+  --border-width: 2px;
+  color: #A26DF8;
+  font-weight: bold;
+  --padding-bottom: 0px;
+  --padding-end: 20px;
+  --padding-start: 20px;
+  --padding-top: 0px;
+}
+
+.container_inicio{
+  background: linear-gradient(to right, rgba(248, 109, 112, 0.4), rgba(194, 163, 245, 0.4), rgba(163, 213, 245, 0.4));
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 650px){
+  .cabeçalho_header_desk{
+    display: none;
+  }
+  .cabeçalho_header_mobile{
+    display: flex;
+  }
+  .espaço{
+    width: 80%;
+  }
 }
