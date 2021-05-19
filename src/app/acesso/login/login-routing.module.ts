@@ -6,7 +6,15 @@ import { LoginPage } from './login.page';
 const routes: Routes = [
   {
     path: '',
-    component: LoginPage
+    component: LoginPage,
+  }/*,
+  {
+    path: 'cadastro-cliente',
+    loadChildren: () => import('../../acesso/cadastro-cliente/cadastro-cliente.module').then( m => m.CadastroClientePageModule)
+  }*/,
+  {
+    path: 'home-page',
+    loadChildren: () => import('../../sistema/home-page/home-page.module').then( m => m.HomePagePageModule)
   }
 ];
 
