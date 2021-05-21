@@ -6,13 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  public appPages = [
+  public appChamadas = [
     { title: 'Início', url: '/folder/Inbox', icon: 'home' },
     { title: 'Sobre', url: 'para-instituicoes', icon: 'clipboard' },
-    { title: 'Filiação', url: 'perfil', icon: 'school' },
-    { title: 'Entrar', url: 'pesquisa', icon: 'school' },
-    { title: 'Criar Conta', url: 'pesquisa', icon: 'school' },
+    { title: 'Filiação', url: 'perfil', icon: 'people' },
   ];
-  public labels = ['Entrar', 'Criar Conta'];
+  public appCadastro = [
+    { title: 'Entrar', url: '/acesso/login/login.module', icon: 'enter' },
+    { title: 'Criar Conta', url: '/acesso/cadastro-cliente/cadastro-cliente.module', icon: 'add-circle' },
+  ];
   constructor() {}
 }
