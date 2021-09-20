@@ -7,6 +7,18 @@ const routes: Routes = [
   {
     path: '',
     component: CadastroClientePage
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('../../home/home.module').then( m => m.HomePageModule)
+  },
+  {
+    path: 'home-page',
+    loadChildren: () => import('../../sistema/home-page/home-page.module').then( m => m.HomePagePageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('../../acesso/login/login.module').then( m => m.LoginPageModule)
   }
 ];
 
