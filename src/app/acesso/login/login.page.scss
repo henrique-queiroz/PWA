@@ -140,3 +140,201 @@ ion-content{
     }
 }
 */
+
+#Cadastro_Cliente{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.div_esquerda{
+    background: linear-gradient(to top left, rgb(32, 19, 19), rgb(16, 10, 10));
+    width: 35.4%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div_direita{
+    width: 64.6%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ion-item{
+    --background: rgba(255, 255, 255, 0);
+}
+
+.white{
+    color: white;
+}
+
+.item_inicial{
+    margin-top: auto;
+}
+
+.titulo_esquerda{
+    font-family: 'Dancing Script';
+    font-size: min(40px, 4vw);
+    margin-bottom: 56px;
+}
+
+img{
+    width: 80%;
+}
+
+.text_esquerda{
+    font-family: 'Montserrat';
+    font-size: min(15px,1.5vw);
+    margin-top: 71px;
+    margin-bottom: 20px;
+}
+
+.btn_cadastrar{
+    color:#F86D70;
+    font-weight: bold;
+    --border-color: #F86D70;
+    --border-radius: 0;
+    --border-width: 3px;
+    --padding-bottom: 10px;
+    --padding-end: 20px;
+    --padding-start: 20px;
+    --padding-top: 10px;
+    margin-bottom: auto;
+    font-size: min(15px,1.5vw);
+}
+
+.arrow-back{
+    color: black;
+    padding-top: 1%;
+    font-size: max(20px, 1vw);
+}
+
+.agrupamento_cadastro{
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.centro_direita{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.criar_conta{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: min(32px, 6.5vw);
+}
+
+.text_direita{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: min(12px, 4vw);
+}
+
+.redes_sociais ion-icon{
+    color:#A26DF8;
+    margin: 0 20px;
+    font-size: 30px;
+    font-size: min(30px, 7vw);
+}
+
+ion-input{
+    font-family: 'Montserrat';
+    font-size: min(13px, 4vw);
+    --placeholder-color: black;
+    --placeholder-opacity: 1;
+}
+
+.item_input{
+    width: 90%;
+    border: solid lightgray 1px;
+    margin-bottom: 20px;
+    --inner-padding-bottom: 0;
+    --inner-padding-end: 0;
+    --inner-padding-start: 0;
+    --inner-padding-top: 0;
+    --padding-bottom: 0;
+    --padding-end: 10px;
+    --padding-start: 10px;
+    --padding-top: 0;
+}
+
+.item_input ion-icon{
+    color: black;
+    opacity: 0.5;
+    font-size: min(22px, 4vw);
+    
+}
+
+.btn_entrar{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color:#A26DF8;
+    --border-color: #A26DF8;
+    --border-radius: 0;
+    --border-width: 3px;
+    --padding-bottom: 25px;
+    --padding-end: 132px;
+    --padding-start: 132px;
+    --padding-top: 25px;
+    font-size: min(15px, 5vw);
+}
+
+.seta{
+    font-size: min(25px, 5vw);
+}
+
+.checkbox{
+    display: flex;
+}
+
+.checkbox ion-checkbox{
+    opacity: 0.5;
+    --border-color-checked: black;
+    --border-color: black; 
+    --checkmark-color: black;
+    --border-radius: 5px;
+    --size: min(20px, 5vw);   
+}
+
+.checkbox ion-label{
+    font-family: 'Montserrat';
+    font-size: min(15px, 5vw);
+}
+
+@media (max-width: 710px){
+    #Cadastro_Cliente{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+    }
+    .div_esquerda{
+        display: none;
+    }
+    .div_direita{
+        width: 80%;
+        margin: 0 10%;
+    }
+    .item_input{
+        width: 80%; 
+    }
+    .btn_entrar{
+        --padding-end: 110px;
+        --padding-start: 110px;
+    }
+}
+
+@media (max-width: 350px){
+    .btn_entrar{
+        --padding-end: 90px;
+        --padding-start: 90px;
+    }
+}

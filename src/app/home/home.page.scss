@@ -53,8 +53,230 @@
 
 .container_inicio{
   background: linear-gradient(to right, rgba(248, 109, 112, 0.4), rgba(194, 163, 245, 0.4), rgba(163, 213, 245, 0.4));
+  width: 100%;
+  height: 350px;
   padding: 0;
   margin: 0;
+}
+
+.conteudo{
+  display: flex;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.img_inicio{
+  width: 45%; 
+  padding-top: 40px;
+}
+
+.textos{
+  width: 40%; 
+  margin-left: 6%;
+  margin-top: 70px;
+}
+
+.titulo_inicio{
+  font-family: 'Dancing Script';
+  font-weight: bold;
+  font-size: min(40px, 4vw);
+}
+
+.texto_inicio{
+  font-family: 'Montserrat';
+  font-size: min(14px,1.5vw);
+  text-align: justify;
+}
+
+.btn_inicio{
+  width: 100%;
+  font-family: 'Montserrat';
+  color: #A26DF8;
+  --border-color: #A26DF8;
+  --border-radius: 0;
+  --border-width: 4px;
+  font-weight: bold;
+  --padding-bottom: 30px;
+  --padding-top: 30px;
+}
+.container_info{
+  width: 100%;
+  display: flex;
+}
+
+.centro_info{
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  margin: 0 auto;
+ 
+}
+
+.card_info{
+  width: 22%;
+}
+
+.primeiro_card{
+  margin-left: auto;
+}
+
+.ultimo_card{
+  margin-right: auto;
+}
+
+.titulo_info{
+  font-family: 'Dancing Script';
+  font-weight: bold;
+  font-size: min(22px, 2.5vw);
+  text-align: center;
+}
+
+.texto_info{
+  font-family: 'Montserrat';
+  font-size: min(14px,2vw);
+  text-align: justify;
+  color: #100A0A;
+}
+
+.container_sobre{
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.centro_sobre{
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo_sobre{
+  font-family: 'Dancing Script';
+  font-size: min(35px, 4vw);
+}
+
+.item_sobre{
+  width: 60%;
+}
+
+.item_sobre_pergunta{
+  font-family: 'Montserrat';
+  font-size: min(20px, 2.5vw);
+  color: #100A0A;
+  font-weight: bold;
+}
+
+.sobre_resposta{
+  display: none;
+}
+
+.item_sobre_resposta{
+  font-family: 'Montserrat';
+  font-size: min(14px,2vw);
+  text-align: justify;
+  color: #100A0A;
+}
+
+.btn_sobre{
+  color: #100A0A;
+  font-size: min(20px,2vw);
+}
+
+.container_rodape{
+  width: 100%;
+  background-color: #100A0A;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.centro_rodape{
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  align-items: center;
+}
+
+.titulo_rodape{
+  font-family: 'Dancing Script';
+  font-size: min(32px, 4vw);
+  margin-left: 20px;
+}
+
+.sobre{
+  width: 40%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo_sobre_rodape{
+  font-family: 'Montserrat';
+  font-size: min(16px,2vw);
+  font-weight: bold;
+}
+
+.texto_sobre_rodape{
+  font-family: 'Montserrat';
+  font-size: min(12px,2vw);
+  text-align: justify;
+}
+
+.contato{
+  margin-top: 40px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dados_contato{
+  margin-left: 15px;
+}
+
+.titulo_contato_rodape{
+  font-family: 'Montserrat';
+  font-size: min(16px,2vw);
+}
+
+.texto_contato_rodape{
+  font-family: 'Montserrat';
+  font-size: min(12px,2vw);
+}
+
+.direitos{
+  width: 100%;
+  background-color: #100A0A;
+}
+
+.texto_direito{
+  font-family: 'Montserrat';
+  font-size: min(12px,2vw);
+}
+
+.white{
+  color:white;
+}
+
+ion-item{
+  --background: rgba(255, 255, 255, 0);
+}
+
+@media (max-width: 720px){
+  .centro_rodape{
+    flex-direction: column;
+  }
+  .centro_info{
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 650px){
@@ -66,5 +288,18 @@
   }
   .espaço{
     width: 80%;
+  }
+  .card_info{
+    width: 50%;
+  }
+
+}
+
+@media (max-width: 400px){
+  .centro_info{
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    margin: 0 auto;
   }
 }

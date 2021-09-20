@@ -20,112 +20,131 @@
 
   <div class="container_inicio">
     <div class="conteudo">
-      <img>
+      <img class="img_inicio" src="/assets/imagens/svg_inicio.svg">
       <div class="textos">
-        <h1></h1>
-        <p></p>
-        <ion-button></ion-button>
+        <h1 class="titulo_inicio">Sua festa do seu jeito</h1>
+        <p class="texto_inicio">Organize seu evento da maneira que deseja, escolha todos serviços e fornecedores que deseja, desde o buffet até o buquê de flores</p>
+        <ion-button fill="outline" routerLink="cadastro-cliente" class="btn_inicio">Criar Nova Conta<ion-icon name="chevron-forward"></ion-icon></ion-button>
     </div>
     </div>
   </div>
 
   <div class="container_info">
-    <ion-item>
-      <ion-label></ion-label>
-    </ion-item>
+    <div class="centro_info">
 
-    <ion-card>
-      <ion-card-header>
-        <ion-card-title>Título</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        Texto
-      </ion-card-content>
-    </ion-card>
+            <ion-card class="card_info primeiro_card">
+              <ion-card-header>
+                <img src="/assets/imagens/Imagem_1.png">
+                <ion-card-title><h1 class="titulo_info">Organize qualquer tipo de evento!</h1></ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                <p class="texto_info">Com o Uhuu! você pode realizar desde casamentos até festas de debutante</p>
+              </ion-card-content>
+            </ion-card>
 
-    <ion-card>
-      <ion-card-header>
-        <ion-card-title>Título</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        Texto
-      </ion-card-content>
-    </ion-card>
+            <ion-card class="card_info">
+              <ion-card-header>
+                <img src="/assets/imagens/Imagem_2.png">
+                <ion-card-title><h1 class="titulo_info">Escolha os serviços que deseja contratar</h1></ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                <p class="texto_info">Aqui, você pode ter total controle de qual vai ser o Buffet ou então, em qual salão de beleza, serão recepcionados os seus convidados</p>
+              </ion-card-content>
+            </ion-card>
+ 
+            <ion-card class="card_info">
+              <ion-card-header>
+                <img src="/assets/imagens/Imagem_3.png">
+                <ion-card-title><h1 class="titulo_info">Envie convites aos convidados facilmente</h1></ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+              <p class="texto_info">Através do Uhuu! você pode convidar os seus familiares e amigos facilmente, através do sistema de convites que é muito simples.</p>
+              </ion-card-content>
+            </ion-card>
 
-    <ion-card>
-      <ion-card-header>
-        <ion-card-title>Título</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        Texto
-      </ion-card-content>
-    </ion-card>
-
-    <ion-card>
-      <ion-card-header>
-        <ion-card-title>Título</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        Texto
-      </ion-card-content>
-    </ion-card>
+            <ion-card class="card_info ultimo_card grid_4">
+              <ion-card-header>
+                <img src="/assets/imagens/Imagem_4.png">
+                <ion-card-title><h1 class="titulo_info">Comunique-se com flexibilidade</h1></ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                <p class="texto_info">Evite problemas de comunicação através do nosso eficiente chat, que pode ser uma mão na roda para a organização de eventos.</p>
+              </ion-card-content>
+            </ion-card>
+    </div>
   </div>
 
-  <div class="container_sobre">
-    <ion-card>
-      <ion-item>
-        <ion-label>Título pergunta</ion-label>
-        <ion-icon>Setinha</ion-icon>
+  <div class="container_sobre" >
+    <div class="centro_sobre">
+    <ion-item lines="none"> 
+        <ion-label class="titulo_sobre">Sobre nós</ion-label>
+    </ion-item>
+
+    <ion-card class="item_sobre"> 
+      <ion-item lines="none">
+        <ion-label class="item_sobre_pergunta">Como começamos?</ion-label>
+       <ion-button (click)="abrir_1()" class="btn_sobre" fill="clear"><ion-icon [name]="icone_1"></ion-icon></ion-button>
       </ion-item>
-      <ion-card-content>
-        Resposta
+      <ion-card-content [ngClass]="{'sobre_resposta': resposta_1 }">
+        <p class="item_sobre_resposta">Inicialmente, começamos a atuar com realização de cerimônias e assessoria a eventos em 20...(coletar essa data com o cliente) . Já atendemos diversos clientes, em diversos tipos de ocasiões, como casamentos, festas de debutante, etc. </p>
       </ion-card-content>
     </ion-card>
 
-    <ion-card>
-      <ion-item>
-        <ion-label>Título pergunta</ion-label>
-        <ion-icon>Setinha</ion-icon>
+    <ion-card class="item_sobre">
+      <ion-item lines="none">
+        <ion-label class="item_sobre_pergunta">Quais tipos de eventos organizamos?</ion-label>
+        <ion-button (click)="abrir_2()" class="btn_sobre" fill="clear"><ion-icon [name]="icone_2"></ion-icon></ion-button>
       </ion-item>
-      <ion-card-content>
-        Resposta
+      <ion-card-content [ngClass]="{'sobre_resposta': resposta_2 }">
+        <p class="item_sobre_resposta">Resposta</p>
       </ion-card-content>
     </ion-card>
 
-    <ion-card>
-      <ion-item>
-        <ion-label>Título pergunta</ion-label>
-        <ion-icon>Setinha</ion-icon>
+    <ion-card class="item_sobre">
+      <ion-item lines="none">
+        <ion-label class="item_sobre_pergunta">Quem somo atualmente?</ion-label>
+        <ion-button (click)="abrir_3()" class="btn_sobre" fill="clear"><ion-icon [name]="icone_3"></ion-icon></ion-button>
       </ion-item>
-      <ion-card-content>
-        Resposta
+      <ion-card-content [ngClass]="{'sobre_resposta': resposta_3 }">
+        <p class="item_sobre_resposta">Resposta</p>
       </ion-card-content>
     </ion-card>
+    </div>
   </div>
 
   <div class="container_rodape">
-    <div class="Titulo"></div>
-    <div class="sobre"></div>
-    <div class="contato"></div>
-    <div class="direitos"></div>
+    <div class="centro_rodape">
+      <div class="Titulo">
+        <ion-item>
+          <ion-label class="titulo_rodape white">Sua festa do seu jeito</ion-label>
+        </ion-item>
+      </div>
+      <div class="sobre">
+        <ion-item>
+          <h1 class="titulo_sobre_rodape white">Sobre</h1>
+        </ion-item>
+        <ion-item>
+          <p class="texto_sobre_rodape  white">Inicialmente, começamos a atuar com realização de cerimônias e assessoria a eventos em 20...(coletar essa data com o cliente) . Já atendemos diversos clientes, em diversos tipos de ocasiões, como casamentos, festas de debutante, etc. </p>
+        </ion-item>
+      </div>
+      <div class="contato">
+        <ion-item>
+          <h1 class="titulo_contato_rodape white">Uhuu!</h1>
+        </ion-item>
+        <div class="dados_contato">
+          <p class="texto_contato_rodape white">+55 (14) 99999-9999</p>
+          <p class="texto_contato_rodape white">elisangelagasparotto@gmail.com</p>
+        </div>
+        <ion-item>
+          <ion-icon class="white" name="logo-facebook"></ion-icon>
+          <ion-icon class="white" name="logo-instagram"></ion-icon>
+        </ion-item>
+      </div>
+    </div>
+    <div class="direitos">
+      <ion-item>
+        <ion-label class="texto_direito white">Uhhu! 2021 - Todos direitos reservados</ion-label>
+      </ion-item>
+    </div>
   </div>
 </ion-content>
-<!--<ion-header [translucent]="true">
-  <ion-toolbar color="dark">
-    <ion-title>
-      Projeto X
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <img src="assets/carregando.png">
-  </div>
-</ion-content>-->
